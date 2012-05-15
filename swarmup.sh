@@ -15,9 +15,9 @@ fi
 
 # Add swarm pubkey
 mkdir -p ~/.ssh
-echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdFRaOxKTu8bDqyG5VAEl7a+muODX6Ja0Qic/3/+ZdsUQvKRPAxRFLpDG34GS2ROaPplNuSOub/tZqYFWETCb3aRXhf3RGXODseRHckrWjbDy5n4whmrevNHBhHYWBWFjQSodvk/9hjmxA50OrNwEa4zGjiM6J50NdauzTmRB/AfBeGlxjr843HyNCpP+Clt8dvU46jsPsAS+ndye09ZJ2pYtbAOxNTNAy7dv4GCDO/PtPdXb4p4rUsMXxuidgaJIY1OyIDtlUhDQNDnDyOa1HDQJPVTiBQO/zQq0pmpXYAV7Hd+Q3u1mi0+tRUru4Ji9SgfLXCD/OJdJkfDaXr9hj swarm@enigma" >> ~/.ssh/authorized_keys
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDtC2F1cul9vGhNNH+E1juF2YdXVJ6as8aSf/djFA1sI2sYbIKM0XDjDIAEKoWAl/dBjPfGs/CppntrzOLZfDVWATINL0RTgSFw/SsfMz9LyeLokKh0jcmr1Bnwn85U10/zE9XngKlEbHcNZ1PE5cZlqLPq0TnELgbOcxIrD5A/01uuFBQlU1vQlkytyjbTkW8Y+ZhAzg133pRAtB+Jzs9kZF6huGVReiDp2BlNoJtC4LCME+J2RfTWvUWc5NtRxBRkZNtPf32i5xPMJZIwtSRO3RbCPHxSGCz5xARTwg8iAfoW6HgeVDPtxc8RiKxoctSmcC78jX546sgLjG37ZwsV tworker@swarm" >> ~/.ssh/authorized_keys
 
-dotfiles_raw=https://github.com/technomancy/dotfiles/raw/master
+dotfiles_raw=https://github.com/jennifersmith/swarm-coding/dotfiles/raw/master
 
 if type -p curl >/dev/null 2>&1; then
     HTTP_CLIENT="curl -f -L -o"
