@@ -15,3 +15,4 @@ export GEM_HOME=$HOME/.gem/ruby/1.9.1
 
 export EDITOR="emacsclient"
 
+alias emacs='/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs -nw'
