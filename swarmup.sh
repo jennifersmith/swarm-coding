@@ -29,7 +29,7 @@ fi
 mkdir -p ~/.emacs.d
 $HTTP_CLIENT ~/.emacs.d/init.el $dotfiles_raw/.emacs.d/init-lite.el
 
-files=".bashrc .bash_aliases .profile .tmux.conf"
+files=".bash_profile .bashrc .bash_aliases .profile .tmux.conf"
 
 cd ~
 for f in $files; do
