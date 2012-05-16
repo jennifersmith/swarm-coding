@@ -44,8 +44,8 @@ git config --global user.name "TW Swarm Coders"
 git config --global user.email "NOTAGOODEMAIL@thoughtworks.com"
 
 
-if [ $(emacs --version) != "swarm" ]; then
-    echo "Install Emacs 24!"
+if [ -z "$(emacs --version | grep 24)" ]; then
+    echo "Install Emacs 24 and ensure it's on the path"
     exit 1
 fi
 
