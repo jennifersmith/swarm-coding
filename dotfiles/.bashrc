@@ -1,5 +1,8 @@
 # .bashrc
+# put this here to ensure linking to the HEAD brew installed emacs -
+# you will have to have installed this already
 
+alias emacs='/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs -nw'
 # prompt coloring
 # see http://attachr.com/9288 for full-fledged craziness
 if [ `/usr/bin/whoami` = "root" ] ; then
