@@ -9,7 +9,7 @@ if [ "$USER" != "swarm" ]; then
     echo "(on OSX you will probably have to creat user manually!"
     echo "  sudo adduser swarm --gecos \"\" # set password to swarm"
     echo "  sudo -u swarm -i"
-    echo "  curl http://git.io/wDeHNw > swarmup.sh"
+    echo "  curl -L http://git.io/wDeHNw > swarmup.sh"
     echo "  sh swarmup.sh"
     exit 1
 fi
@@ -42,6 +42,12 @@ chmod 755 ~/bin/lein
 
 git config --global user.name "TW Swarm Coders"
 git config --global user.email "NOTAGOODEMAIL@thoughtworks.com"
+
+
+if [ $(emacs --version) != "swarm" ]; then
+    echo "Install Emacs 24!"
+    exit 1
+fi
 
 # Elisp packages
 emacs --batch -l .emacs.d/init.el -f kill-emacs
